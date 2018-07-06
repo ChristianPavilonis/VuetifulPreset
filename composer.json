@@ -1,0 +1,23 @@
+{
+    "name": "tissy-the-savior/tissys-preset",
+    "description": "A preset for people making a SPA (I hate that term) with VueJJs.",
+    "keywords": ["laravel", "laravel-preset"],
+    "type": "laravel-preset",
+    "authors": [
+        {
+            "name": "Christian Pavilonis",
+            "email": "christian@statebuilt.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "TissyTheSavior\\TissysPreset\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": ["TissyTheSavior\\TissysPreset\\TissysServiceProvider"]
+        }
+    }
+}
