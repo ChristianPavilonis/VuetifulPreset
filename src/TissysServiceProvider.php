@@ -14,8 +14,10 @@ class TissysServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        PresetCommand::macro('statebuilt', function($command) {
+        PresetCommand::macro('tissys', function($command) {
             Preset::install();
+
+            $command->info('WAM! All done. Compile your assets, customize your bootstrap.js file, and get building!');
         });
     }
 
