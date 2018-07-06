@@ -11,7 +11,7 @@ function stubsPath($path = '')
     return __DIR__.'/stubs/'.$path;
 }
 
-function saasPath($path = '')
+function sassPath($path = '')
 {
-    return resource_path('saas/'.$path);
+    return resource_path('sass/'.$path);
 }
