@@ -14,7 +14,7 @@ class Preset extends LaravelPreset
     {
         static::removeAssetDirectories();
 
-        static::addSaasDirectory();
+        static::addSassDirectory();
 
         static::addSassAppFile();
 
@@ -31,12 +31,12 @@ class Preset extends LaravelPreset
     protected static function removeAssetDirectories()
     {
         File::deleteDirectory(resource_path('assets'));
-        // Remove javascript/saas directoies if they exits.
+        // Remove javascript/sass directoies if they exits.
         File::deleteDirectory(resource_path('javascript'));
         File::deleteDirectory(resource_path('sass'));
     }
 
-    protected static function addSaasDirectory()
+    protected static function addSassDirectory()
     {
         File::makeDirectory(sassPath());
     }
