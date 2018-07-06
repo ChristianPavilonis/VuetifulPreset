@@ -5,11 +5,11 @@
 </template>
 
 <script>
-    import View from './View';
+    import BaseView from './BaseView';
 
     export default {
 
-        extends: View,
+        extends: BaseView,
 
         data() {
             return {
