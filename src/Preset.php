@@ -1,6 +1,6 @@
 <?php
 
-namespace TissyTheSavior\TissysPreset;
+namespace TissyTheSavior\VuetifulPreset;
 
 use Illuminate\Foundation\Console\Presets\Preset as LaravelPreset;
 use Illuminate\Support\Arr;
@@ -13,7 +13,7 @@ class Preset extends LaravelPreset
     public static function install()
     {
         static::removeAssetDirectories();
-
+/**/
         static::addSassDirectory();
 
         static::addSassAppFile();
@@ -55,8 +55,7 @@ class Preset extends LaravelPreset
     {
         return array_merge(
             [
-                "tissy-form-validator" => "^1.0.15",
-                "vuetiful-forms"       => "^0.1.0",
+                "vuetiful-forms"       => "latest",
                 "vue-router"           => "^3.0.1",
             ],
             Arr::except(

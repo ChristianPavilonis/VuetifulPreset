@@ -5,7 +5,7 @@ namespace TissyTheSavior\TissysPreset;
 use Illuminate\Foundation\Console\PresetCommand;
 use Illuminate\Support\ServiceProvider;
 
-class TissysServiceProvider extends ServiceProvider
+class VuetifulServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap services.
@@ -14,7 +14,7 @@ class TissysServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        PresetCommand::macro('tissys', function($command) {
+        PresetCommand::macro('vuetiful', function($command) {
             Preset::install();
 
             $command->info('WAM! All done. Compile your assets, customize your bootstrap.js file, and get building!');
