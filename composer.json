@@ -1,5 +1,5 @@
 {
-    "name": "tissy-the-savior/vuetiful-preset",
+    "name": "christian-pav/vuetiful-preset",
     "description": "A preset for people making a SPA with VueJJs.",
     "keywords": ["laravel", "laravel-preset"],
     "type": "laravel-preset",
@@ -12,12 +12,12 @@
     "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "TissyTheSavior\\VuetifulPreset\\": "src/"
+            "ChristianPav\\VuetifulPreset\\": "src/"
         }
     },
     "extra": {
         "laravel": {
-            "providers": ["TissyTheSavior\\VuetifulPreset\\VuetifulServiceProvider"]
+            "providers": ["ChristianPav\\VuetifulPreset\\VuetifulServiceProvider"]
         }
     }
 }

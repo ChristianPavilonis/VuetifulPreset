@@ -1,6 +1,6 @@
 <?php
 
-namespace TissyTheSavior\TissysPreset;
+namespace ChristianPav\TissysPreset;
 
 use Illuminate\Foundation\Console\PresetCommand;
 use Illuminate\Support\ServiceProvider;

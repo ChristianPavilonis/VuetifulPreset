@@ -1,6 +1,6 @@
 <?php
 
-namespace TissyTheSavior\VuetifulPreset;
+namespace ChristianPav\VuetifulPreset;
 
 use Illuminate\Foundation\Console\Presets\Preset as LaravelPreset;
 use Illuminate\Support\Arr;
