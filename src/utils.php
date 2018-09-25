@@ -3,7 +3,7 @@
 
 function jsPath($path = '')
 {
-    return resource_path('javascript/'.$path);
+    return resource_path('js/'.$path);
 }
 
 function stubsPath($path = '')

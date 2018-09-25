@@ -12,13 +12,7 @@ class Preset extends LaravelPreset
 {
     public static function install()
     {
-        static::removeAssetDirectories();
-/**/
-        static::addSassDirectory();
-
         static::addSassAppFile();
-
-        static::addJavaScriptDirectory();
 
         static::updatePackages();
 
@@ -27,36 +21,18 @@ class Preset extends LaravelPreset
         static::scaffoldJavascript();
     }
 
-
-    protected static function removeAssetDirectories()
-    {
-        File::deleteDirectory(resource_path('assets'));
-        // Remove javascript/sass directoies if they exits.
-        File::deleteDirectory(resource_path('javascript'));
-        File::deleteDirectory(resource_path('sass'));
-    }
-
-    protected static function addSassDirectory()
-    {
-        File::makeDirectory(sassPath());
-    }
-
     protected static function addSassAppFile()
     {
         copy(stubsPath('app.scss'), sassPath('app.scss'));
     }
 
-    protected static function addJavaScriptDirectory()
-    {
-        File::makeDirectory(jsPath());
-    }
 
     protected static function updatePackageArray($packages)
     {
         return array_merge(
             [
-                "vuetiful-forms"       => "latest",
-                "vue-router"           => "^3.0.1",
+                "vuetiful-forms" => "latest",
+                "vue-router"     => "^3.0.1",
             ],
             Arr::except(
                 $packages,
