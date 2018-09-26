@@ -1,7 +1,7 @@
 {
     "name": "christian-pav/vuetiful-preset",
-    "description": "A preset for people making a SPA with VueJJs.",
-    "keywords": ["laravel", "laravel-preset"],
+    "description": "A preset for making a SPA with Vue.js.",
+    "keywords": ["laravel", "laravel-preset", "vue", "vuex"],
     "type": "laravel-preset",
     "authors": [
         {

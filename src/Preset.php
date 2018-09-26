@@ -64,6 +64,9 @@ class Preset extends LaravelPreset
         static::copyJavaScriptFile('Forms/Form.js');
 
         static::copyJavaScriptFile('ApiResources/ApiResource.js');
+
+        static::copyJavaScriptFile('store/index.js');
+        static::copyJavaScriptFile('store/exampleModule.js');
     }
 
     protected static function copyJavaScriptFile($name)
@@ -82,5 +85,7 @@ class Preset extends LaravelPreset
 
         File::makeDirectory(jsPath('Views'));
         File::makeDirectory(jsPath('Views/Components'));
+
+        File::makeDirectory(jsPath('store'));
     }
 }
