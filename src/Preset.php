@@ -33,6 +33,7 @@ class Preset extends LaravelPreset
             [
                 "vuetiful-forms" => "latest",
                 "vue-router"     => "^3.0.1",
+                "vuex"           => "3.0.1",
             ],
             Arr::except(
                 $packages,
