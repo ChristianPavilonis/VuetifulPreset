@@ -5,7 +5,7 @@ import example from './exampleModule';
 
 Vue.use(Vuex);
 
-export default new Vuex.store({
+export default new Vuex.Store({
 
     state    : {},
     getters  : {},
