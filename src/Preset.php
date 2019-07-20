@@ -32,6 +32,7 @@ class Preset extends LaravelPreset
         return array_merge(
             [
                 "vuetiful-forms" => "latest",
+                "form-guard"     => "latest",
                 "vue-router"     => "^3.0.1",
                 "vuex"           => "3.0.1",
             ],
